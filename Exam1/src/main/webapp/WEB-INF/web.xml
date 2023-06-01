@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  
+  
+<error-page>
+        <location>/error_page.jsp</location>
+    </error-page>
+  
+  
+  
+  
+  
+  
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<servlet-class>com.exam.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>RegisterServlet</servlet-name>
+  	<servlet-class>com.exam.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>EditServlet</servlet-name>
+  	<servlet-class>com.exam.servlet.EditServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SubmitQuery</servlet-name>
+  	<servlet-class>com.exam.servlet.SubmitQuery</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>LogoutServlet</servlet-name>
+  	<servlet-class>com.exam.servlet.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SubjectServlet</servlet-name>
+  	<servlet-class>com.exam.servlet.SubjectServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>TermsServlet</servlet-name>
+  	<servlet-class>com.exam.servlet.TermsServlet</servlet-class>
+  </servlet>
+   <servlet>
+  	<servlet-name>QuestionServlet</servlet-name>
+  	<servlet-class>com.exam.servlet.QuestionServlet</servlet-class>
+  </servlet>
+  
+  
+  
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RegisterServlet</servlet-name>
+  	<url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>EditServlet</servlet-name>
+  	<url-pattern>/EditServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SubmitQuery</servlet-name>
+  	<url-pattern>/SubmitQuery</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>LogoutServlet</servlet-name>
+  	<url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SubjectServlet</servlet-name>
+  	<url-pattern>/SubjectServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>TermsServlet</servlet-name>
+  	<url-pattern>/TermsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>QuestionServlet</servlet-name>
+  	<url-pattern>/QuestionServlet</url-pattern>
+  </servlet-mapping>
+
+  
+  
+  <display-name>Exam1</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
